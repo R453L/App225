@@ -55,5 +55,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Async Progress Dialog"/>
+    <Button
+        android:id="@+id/btnMenuActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Activity"/>
+    <Button
+        android:id="@+id/btnStaticFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Static Fragment"/>
 
 </LinearLayout>

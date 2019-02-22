@@ -13,16 +13,13 @@ public class GridViewAdapter extends BaseAdapter {
     Context context;
     ArrayList<Integer> arrayList = new ArrayList<>();
 
+    public GridViewAdapter(Context context, ArrayList<Integer> arrayList) {
+        this.context = context;
+        this.arrayList = arrayList;
+    }
+
     GridViewAdapter(Activity ctx){
         context = ctx;
-        arrayList.add(R.drawable.icon_1);
-        arrayList.add(R.drawable.icon_2);
-        arrayList.add(R.drawable.icon_3);
-        arrayList.add(R.drawable.icon_4);
-        arrayList.add(R.drawable.icon_5);
-        arrayList.add(R.drawable.icon_6);
-        arrayList.add(R.drawable.icon_7);
-        arrayList.add(R.drawable.icon_8);
     }
 
     @Override

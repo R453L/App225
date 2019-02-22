@@ -74,6 +74,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,FragmentActivity.class));
             }
         });
+        findViewById(R.id.btnMenuActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,MenuActivity.class));
+            }
+        });
+        findViewById(R.id.btnStaticFragment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,StaticFragmentActivity.class));
+            }
+        });
     }
 
     public void customToast(View v){

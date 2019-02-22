@@ -28,15 +28,16 @@ public class Fragment1 extends Fragment {
                 String b = edt2.getText().toString();
                 int sum = Integer.parseInt(a)+Integer.parseInt(b);
 
-                Fragment2 fragment2 = new Fragment2();
                 Bundle bundle = new Bundle();
                 bundle.putInt("sum",sum);
 
-                //fragment2.setArguments(bundle);
+                Fragment2 fragment2 = new Fragment2();
+                fragment2.setArguments(bundle);
 
-                final FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.frameLayout,fragment2);
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.frameLayout,fragment2,"frg2");
                 ft.commit();
+
             }
         });
 

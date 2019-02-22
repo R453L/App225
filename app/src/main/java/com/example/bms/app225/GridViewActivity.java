@@ -9,26 +9,37 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class GridViewActivity extends AppCompatActivity {
 
     GridView gridView;
     GridViewAdapter gridAdapter;
+    ArrayList<Integer> arrayList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid_view);
 
+        arrayList.add(R.drawable.icon_1);
+        arrayList.add(R.drawable.icon_2);
+        arrayList.add(R.drawable.icon_3);
+        arrayList.add(R.drawable.icon_4);
+        arrayList.add(R.drawable.icon_5);
+        arrayList.add(R.drawable.icon_6);
+        arrayList.add(R.drawable.icon_7);
+        arrayList.add(R.drawable.icon_8);
         gridView = findViewById(R.id.gridview);
-        gridAdapter = new GridViewAdapter(this);
+        gridAdapter = new GridViewAdapter(this,arrayList);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(GridViewActivity.this,""+position,Toast.LENGTH_SHORT).show();
-                view.setBackgroundColor(Color.RED);
+                //view.setBackgroundColor(Color.RED);
 
                 Bundle extra = new Bundle();
-                //extra.putInt("IMAGE_ID",mIcon[position]);
+                extra.putInt("IMAGE_ID",arrayList.get(position));
                 extra.putString("TITLE",""+position);
 
                 Intent intent = new Intent(GridViewActivity.this,ShowDataActivity.class);

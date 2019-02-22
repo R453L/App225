@@ -7,21 +7,23 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.EditText;
 
-public class Fragment2 extends Fragment {
-    TextView tv;
+import com.example.bms.app225.R;
+
+public class StaticFragment2 extends Fragment {
+    EditText edtUsernameHolder;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_2,container,false);
+        View v = inflater.inflate(R.layout.static_fragment_2,container,false);
+        edtUsernameHolder = v.findViewById(R.id.edt_username_holder);
 
-        tv = v.findViewById(R.id.tvResult);
         Bundle bundle = this.getArguments();
-        if (bundle!=null){
-            int sum = bundle.getInt("sum",0);
 
-            tv.setText(""+sum);
+        if(bundle!=null){
+            String user = bundle.getString("USERNAME");
+            edtUsernameHolder.setText(user);
         }
 
         return v;
