@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StaticFragmentActivity"></activity>
+        <activity android:name=".TabSwipeActivity"></activity>
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".ActionModeContextMenuActivity" />
+        <activity android:name=".StaticFragmentActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".ShowDataActivity" />

@@ -86,6 +86,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,StaticFragmentActivity.class));
             }
         });
+        findViewById(R.id.btnActionModeContextMenu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,ActionModeContextMenuActivity.class));
+            }
+        });
+        findViewById(R.id.btnNotificationActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,NotificationActivity.class));
+            }
+        });
+        findViewById(R.id.btnTabSwipeActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,TabSwipeActivity.class));
+            }
+        });
     }
 
     public void customToast(View v){

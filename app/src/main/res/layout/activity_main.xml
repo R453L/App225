@@ -65,5 +65,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Static Fragment"/>
+    <Button
+        android:id="@+id/btnActionModeContextMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action Mode Context Menu"/>
+    <Button
+        android:id="@+id/btnNotificationActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification Activity"/>
+    <Button
+        android:id="@+id/btnTabSwipeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tab Swipe Activity"/>
 
 </LinearLayout>
