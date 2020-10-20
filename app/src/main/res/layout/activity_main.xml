@@ -8,17 +8,17 @@
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <!--<android.support.v7.widget.Toolbar-->
-        <!--android:id="@+id/toolbar"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="?attr/actionBarSize"-->
-        <!--android:background="@color/colorPrimary">-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
         <!--<Button-->
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content"-->
             <!--android:text="button"/>-->
 
-    <!--</android.support.v7.widget.Toolbar>-->
+    </android.support.v7.widget.Toolbar>
 
     <Button
         android:id="@+id/btnCustomToast"
@@ -80,5 +80,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tab Swipe Activity"/>
+    <Button
+        android:id="@+id/btnWhatsappActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp"/>
 
 </LinearLayout>

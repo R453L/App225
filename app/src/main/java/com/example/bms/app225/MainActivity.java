@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 //        getSupportActionBar().setLogo(R.drawable.ic_home);
 
 
@@ -102,6 +102,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,TabSwipeActivity.class));
+            }
+        });
+        findViewById(R.id.btnWhatsappActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,WhatsappActivity.class));
             }
         });
     }
